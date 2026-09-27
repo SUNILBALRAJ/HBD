@@ -10,6 +10,27 @@ import childhoodOne from "../assets/childhood-one.jpg";
 import childhoodTwo from "../assets/childhood-two.jpg";
 import childhoodThree from "../assets/childhood-three.jpg";
 
+import popcutPhoto from "../assets/popcut.jpg";
+import famPhoto from "../assets/fam.jpg";
+import dancerPhoto from "../assets/dancer.jpg";
+import krishnaPhoto from "../assets/krishna.jpg";
+import cutiePhoto from "../assets/cutie.jpg";
+import smallSareePhoto from "../assets/small_saree.jpg";
+import teddyPhoto from "../assets/teddy.png";
+import icePhoto from "../assets/ice.png";
+import greenKurtaPhoto from "../assets/green-kurta.png";
+import greenSareePhoto from "../assets/green_saree.jpg";
+import chubbyPhoto from "../assets/chubby.jpg";
+import goofyPhoto from "../assets/goofy.jpg";
+import blueSareePhoto from "../assets/blue_saree.png";
+import purplePhoto from "../assets/purple.jpg";
+import startPhoto from "../assets/start.png";
+import firstPhoto from "../assets/first.png";
+import chaosPhoto from "../assets/chaos.png";
+import todayPhoto from "../assets/today.png";
+import onamPhoto from "../assets/onam.png";
+import songAudio from "../assets/Mayanadhi.mp3";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -27,15 +48,15 @@ export const Route = createFileRoute("/")({
 type Memory = { image: string; caption: string; note: string };
 
 const memories: Memory[] = [
-  { image: 'src/assets/popcut.jpg', caption: "Look at this cutie 🥺", note: "How can someone look this cute 🥺 " },
-  { image: 'src/assets/fam.jpg', caption: "Your small world", note: "I would like to be included in your world 🥺" },
-  { image: 'src/assets/dancer.jpg', caption: "Goofy ass dancer 🤣", note: "You are the goofiest person I know doing the most random thing unexpectedly 🤣" },
-  { image: 'src/assets/krishna.jpg', caption: "My Little Angel", note: "You are always my sweet little angel" },
-  { image: 'src/assets/cutie.jpg', caption: "One of my favorite smiles.", note: "You have no idea how much brighter everything gets when you laugh" },
-  { image: 'src/assets/small_saree.jpg', caption: "An ordinary little magic.", note: "The magic you bring into life is inimitable" },
-  { image: 'src/assets/teddy.png', caption: "Small things that make you happy", note: "The laugh that made me fall head over heels in love with you" },
-  { image: 'src/assets/ice.PNG', caption: " The Thing you love more than anyone", note: "I know no matter how much ever sad you feel I know for a fact that food will make you happy 🤣" },
-  { image: 'src/assets/green kurta.PNG', caption: "Achooo my babyy", note: "The amount of cuteness aggression that I get from seeing this picture is unhealthy" },
+  { image: popcutPhoto, caption: "Look at this cutie 🥺", note: "How can someone look this cute 🥺 " },
+  { image: famPhoto, caption: "Your small world", note: "I would like to be included in your world 🥺" },
+  { image: dancerPhoto, caption: "Goofy ass dancer 🤣", note: "You are the goofiest person I know doing the most random thing unexpectedly 🤣" },
+  { image: krishnaPhoto, caption: "My Little Angel", note: "You are always my sweet little angel" },
+  { image: cutiePhoto, caption: "One of my favorite smiles.", note: "You have no idea how much brighter everything gets when you laugh" },
+  { image: smallSareePhoto, caption: "An ordinary little magic.", note: "The magic you bring into life is inimitable" },
+  { image: teddyPhoto, caption: "Small things that make you happy", note: "The laugh that made me fall head over heels in love with you" },
+  { image: icePhoto, caption: " The Thing you love more than anyone", note: "I know no matter how much ever sad you feel I know for a fact that food will make you happy 🤣" },
+  { image: greenKurtaPhoto, caption: "Achooo my babyy", note: "The amount of cuteness aggression that I get from seeing this picture is unhealthy" },
 
 ];
 
@@ -53,10 +74,10 @@ const reasons = [
 ];
 
 const timeline = [
-  { icon: "🌱", title: "The Beginning", label: "The day we met", copy: "I didn't know it then, but this was the beginning of something incredibly special.", image: 'src/assets/start.png' },
-  { icon: "💕", title: "The First Memory", label: "The moment it all felt real", copy: "I still remember the little details—the walk, laughs, the kind time never manages to erase.", image: 'src/assets/first.png' },
-  { icon: "😂", title: "The Chaos", label: "When you started tolerating me", copy: "Somehow the ridiculous moments became some of my favorites.", image: 'src/assets/chaos.png' },
-  { icon: "🥰", title: "Today", label: "And somehow we're here", copy: "Still choosing each other. Still making our own tiny universe.", image: 'src/assets/today.png' },
+  { icon: "🌱", title: "The Beginning", label: "The day we met", copy: "I didn't know it then, but this was the beginning of something incredibly special.", image: startPhoto },
+  { icon: "💕", title: "The First Memory", label: "The moment it all felt real", copy: "I still remember the little details—the walk, laughs, the kind time never manages to erase.", image: firstPhoto },
+  { icon: "😂", title: "The Chaos", label: "When you started tolerating me", copy: "Somehow the ridiculous moments became some of my favorites.", image: chaosPhoto },
+  { icon: "🥰", title: "Today", label: "And somehow we're here", copy: "Still choosing each other. Still making our own tiny universe.", image: todayPhoto },
 ];
 
 function BirthdayStory() {
@@ -135,7 +156,7 @@ function BirthdayStory() {
         <div className="lucky-layout">
           <div className="portrait-wrap">
             <span className="doodle doodle-one">♡</span><span className="doodle doodle-two">you, always</span>
-            <img src= 'src/assets/green_saree.jpg' alt="A dreamy moment in a wildflower field" width={1024} height={1280} />
+            <img src={greenSareePhoto} alt="A dreamy moment in a wildflower field" width={1024} height={1280} />
             <p className="photo-date handwritten">my favorite human</p>
           </div>
           <div className="lucky-copy">
@@ -163,17 +184,17 @@ function BirthdayStory() {
         <div className="childhood-collage" aria-label="Childhood photo placeholders">
           <figure className="childhood-photo childhood-photo-one">
             <span className="tape" aria-hidden="true" />
-            <img src = 'src/assets/chubby.jpg' alt="Temporary childhood photo placeholder at age four" loading="lazy" width={768} height={960} />
+            <img src={chubbyPhoto} alt="Temporary childhood photo placeholder at age four" loading="lazy" width={768} height={960} />
             <figcaption className="handwritten">the sweetest beginning</figcaption>
           </figure>
           <figure className="childhood-photo childhood-photo-two">
             <span className="tape" aria-hidden="true" />
-            <img src = 'src/assets/goofy.jpg' alt="Temporary childhood photo placeholder at age seven" loading="lazy" width={768} height={960} />
+            <img src={goofyPhoto} alt="Temporary childhood photo placeholder at age seven" loading="lazy" width={768} height={960} />
             <figcaption className="handwritten">that smile, always ✿</figcaption>
           </figure>
           <figure className="childhood-photo childhood-photo-three">
             <span className="tape" aria-hidden="true" />
-            <img src = 'src/assets/blue_saree.png' alt="Temporary childhood birthday photo placeholder" loading="lazy" width={768} height={960} />
+            <img src={blueSareePhoto} alt="Temporary childhood birthday photo placeholder" loading="lazy" width={768} height={960} />
             <figcaption className="handwritten">birthday girl, then & now</figcaption>
           </figure>
           <span className="childhood-note handwritten">keep smiling and spreading love always</span>
@@ -213,7 +234,7 @@ function BirthdayStory() {
       <section className="universe-section">
         <div className="star-field" aria-hidden="true"><span>✦</span><span>·</span><span>✧</span><span>·</span><span>✦</span><span>⋆</span><span>·</span><span>✧</span></div>
         <div className="universe-copy"><p className="eyebrow">somewhere in the cosmos</p><h2>In Another Universe…</h2><p>There are billions of people.<br />Millions of places.<br />Thousands of possibilities.</p><p>And somehow…</p><p className="cosmic-line">I get to live in the universe where I met you.</p><p>And if there are a million other universes, I'd still hope I find you in every single one. 🌙</p></div>
-        <div className="moon-portrait"><img src="src/assets/purple.jpg" alt="A sunset memory beneath a lavender sky" loading="lazy" width={1024} height={1280} /><span className="orbit orbit-one" /><span className="orbit orbit-two" /></div>
+        <div className="moon-portrait"><img src={purplePhoto} alt="A sunset memory beneath a lavender sky" loading="lazy" width={1024} height={1280} /><span className="orbit orbit-one" /><span className="orbit orbit-two" /></div>
       </section>
 
       <section className="timeline-section paper-section">
@@ -226,7 +247,7 @@ function BirthdayStory() {
       <section className="song-section paper-section">
         <div className="section-heading centered"><p className="eyebrow">press play</p><h2>A Song For You</h2></div>
         <div className="cassette">
-          <audio ref={audioRef} src="src/assets/Mayanadhi.mp3" preload="none" loop onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onTimeUpdate={(event) => {
+          <audio ref={audioRef} src={songAudio} preload="none" loop onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onTimeUpdate={(event) => {
             const { currentTime, duration } = event.currentTarget;
             if (Number.isFinite(duration) && duration > 0) {
               setAudioProgress((currentTime / duration) * 100);
@@ -255,7 +276,7 @@ function BirthdayStory() {
 
       <section className="final-section">
         <div className="final-stars" aria-hidden="true">·　✦　·　♡　·　✧　·</div>
-        <img src="src/assets/onam.png" alt="A favorite memory at golden hour" loading="lazy" width={1024} height={1280} />
+        <img src={onamPhoto} alt="A favorite memory at golden hour" loading="lazy" width={1024} height={1280} />
         <div className="final-copy"><p className="eyebrow">one last thing</p><h2>If I could give you one thing…</h2><p className="final-lead">I'd give you the ability to see yourself through my eyes.</p><p>Then you'd finally understand how incredibly special you are to me.</p><h3>Happy Birthday, Kaadhuuuu. ❤️❤️❤️❤️</h3><p>Thank you for being you.</p><p>In this world, in this lifetime, I'm just happy I get to share it with you.</p><div className="end-mark">♡ ENDLESSLY YOURS ♡</div></div>
         <button className="secret-button handwritten" onClick={(event) => { event.stopPropagation(); setSecretOpen(true); }}>psst… don't click this 👀</button>
       </section>
